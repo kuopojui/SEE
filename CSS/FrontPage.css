@@ -1,0 +1,705 @@
+body{
+    width: 100%;
+    margin: 0;
+    background-color: #f3eccb;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+/*開頭動畫*/
+#square{
+    width: 100%;    
+    height: 850px;
+    background-color: #ffd9bb;
+    z-index: 0;
+}
+#photo{
+    object-fit: cover;
+    width: 95%;
+    opacity: 0.5;
+    border-left: solid 5px #E3B562;
+    border-right: solid 5px #E3B562;
+    animation: f 3.5s ease 0s 1;
+    animation-fill-mode: forwards;
+}
+#photobg{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    top: 0px;
+    width: 100%;
+    height: 950px;
+    z-index: 1;
+    border: solid 0px ;
+    overflow: hidden;
+}
+#UpTriangle-1{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 900px solid #0C335B;
+    border-right: 300px solid transparent;
+    z-index: 3;
+    animation: a 4s ease 0s 1;
+    animation-fill-mode: forwards;
+}
+#DownTriangle-1{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 900px solid 	#0C335B;
+    border-left: 300px solid transparent;
+    z-index: 3;
+    animation: b 4s ease 0s 1;
+    animation-fill-mode: forwards;
+}
+#UpTriangle-2{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 200px solid #FFD700;
+    border-right: 450px solid transparent;
+    z-index: 2;
+    margin: 0;
+    animation: c 4s ease 0s 1;
+    animation-fill-mode: forwards;
+}
+#DownTriangle-2{
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 200px solid #FFD700;
+    border-left: 450px solid transparent;
+    z-index: 2;
+    margin: 0;
+    animation: d 4s ease 0s 1;
+    animation-fill-mode: forwards;
+}
+.container{
+    position: absolute;
+    top: 400px;
+    left: 23%;
+    z-index: 5;
+    font-size: 100px;
+    font-weight: bold;
+    color: #0C335B;
+    font-family: "cubic";
+    animation: e 4.5s ease 0s 1;
+    animation-fill-mode: forwards;
+}
+#timmy {
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    width: 250px;
+    z-index: 4;
+    animation: g 5s ease 0s 1;
+    animation-fill-mode: forwards;
+}
+#logo {
+    position: absolute;
+    top: 650px;
+    left: 80%;
+    width: 300px;
+    z-index: 4;
+    animation: g 5s ease 0s 1;
+    animation-fill-mode: forwards;
+}
+/*頁首*/
+#head{
+    background-color: #0C335B;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    text-align: center;
+    z-index: 6;
+    position: sticky;
+    top: 0;
+    width: 100VW;
+    height: auto;
+    margin: auto;
+}
+#option{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.btn {
+    position: relative;
+    z-index: 1;
+    min-width: 200px;
+    background-color: transparent;
+    border: none;
+    color: #E3B562;
+    font-family: "zen";
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.5s;
+    border-radius: 50px;
+    overflow: hidden;    
+}
+.btn:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    border: 1px solid #0C335B;
+    padding: 1px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+.btn:after {
+    content: "";
+    position: absolute;
+    left: 9px;
+    top: 9px;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    transition: all 0.3s 0.2s;
+    border-radius: 50px;
+    overflow: hidden;
+}
+.btn:hover {
+    color: #0C335B;
+    border-radius: 50px;
+    overflow: hidden;
+}
+.btn:hover:after {
+    transition: all 0.3s;
+    left: 0;
+    top: 0;
+    border-radius: 50px;
+    overflow: hidden;
+}
+.btn .inner {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+.btn .inner .blob {
+    position: absolute;
+    top: 0px;
+    width: 25%;
+    height: 100%;
+    background: #E3B562;
+    border-radius: 100%;
+    transform: translate3d(0, 150%, 0) scale(1.8);
+    transition: transform 0.45s;
+    border-radius: 50px;
+    overflow: hidden;
+}
+.btn .inner .blob:nth-child(1) {
+    left: 0%;
+    transition-delay: 0s;
+}
+.btn .inner .blob:nth-child(2) {
+    left: 30%;
+    transition-delay: 0.08s;
+}
+.btn .inner .blob:nth-child(3) {
+    left: 60%;
+    transition-delay: 0.16s;
+}
+.btn .inner .blob:nth-child(4) {
+    left: 90%;
+    transition-delay: 0.24s;
+}
+.btn:hover .inner .blob {
+    transform: translateZ(0) scale(1.8);
+}
+/*前言*/
+.txt-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: "zen";
+
+}
+#txtbox{
+    display: block;
+    font-size: 24px;
+    width: 75%;
+    justify-content: center;
+    text-align: center;
+}
+#txt1{
+    position: relative;
+    animation-fill-mode: forwards;
+    animation: i 3s ease 0s 1;
+    animation-fill-mode: forwards;
+}
+#txt2{
+    position: relative;
+    animation-fill-mode: forwards;
+    animation: j 4s ease 0s 1;
+    animation-fill-mode: forwards;
+}
+/*冒險地圖*/
+.map{
+    width: 100%;
+    height: auto;
+    z-index: 2;
+}
+.space{
+    width: 100%;
+    height: 150px;
+}
+#mapbg{
+    width: 100%;
+    height: 1000px;
+    background-color: #0C335B;
+    z-index: 1;
+}
+#bigmap{
+    scale: 0.7;
+    position: relative;
+    top: -30%;
+    left: -5%;
+    z-index: 2;
+    animation: h 2s ease-out 0s 1;
+    animation-fill-mode: forwards;
+    opacity: 0.7;
+}
+#maptri{
+    position: relative;
+    top: -1000px;
+    left: 1020px;
+    width: 0;
+    height: 0;
+    border-top: 200px solid white;
+    border-left: 900px solid transparent;
+    z-index: 3;
+    opacity: 0.3;
+}
+#maptxtbox{
+    display: flex;
+    justify-content: center;
+}
+#maptxt{
+    position: relative;
+    font-family: "zen";
+    font-size: 80px;
+    top: -10%;
+}
+#diabox{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: "zen";
+    font-weight: bold;
+    color: #0C335B;
+    width: 400px;
+    height: 100px;
+    background-color: orange;
+    border: solid 2px orange;
+    border-radius: 50px;
+    position: relative;
+    top: 75px;
+    left: 1250px;
+    z-index: 4;
+}
+#diatri{
+    width: 0;
+    height: 0;
+    border-top: 50px solid orange;
+    border-right: 30px solid transparent;
+    border-left: 100px solid transparent;
+    position: relative;
+    top: 50px;
+    left: 1450px;
+    z-index: 3;
+    transform: rotate(-150deg);
+}
+#t-smile{
+    width: 15%;
+    height: auto;
+    position: absolute;
+    top: 2210px;
+    left: 1600px;
+    z-index: 5;
+}
+#plane{
+    scale: 1.5;
+    position: absolute;
+    top: 2500px;
+    left: 1100px;
+    z-index: 3;
+
+}
+.CountryButton{
+    width: auto;
+    height: 50px;
+    font-family: "zen";
+    position: relative;
+    min-width: 160px;
+    background: transparent;
+    border: none;
+    border-radius: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.CountryButton span {
+    cursor: pointer;
+    color: #E3B562;
+    mix-blend-mode: darken;
+    text-shadow: -1px -1px 0 #0C335B, 1px -1px 0 #0C335B, -1px 1px 0 #0C335B, 1px 1px 0 #0C335B;
+}
+.CountryButton:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0px;
+    height: 100%;
+    border-radius: 50px;
+    background: #E3B562;
+    transition: all 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.CountryButton:hover:before {
+    content: '➣';
+    padding-left: 20px;
+    background: #ffd9bb;
+    color: #0C335B;
+    width: 100%;
+    text-align: left;
+    text-shadow: -1px -1px 0 #0C335B, 1px -1px 0 #0C335B, -1px 1px 0 #0C335B, 1px 1px 0 #0C335B;
+}
+.flag{
+    height: 30px;
+}
+.btn-Philippines{
+    position: relative;
+    top: -850px;
+    left: 700px;
+    z-index: 3;
+}
+.btn-Brunei{
+    position: relative;
+    top: -625px;
+    left: 400px;
+    z-index: 3;
+}
+.btn-Singapore{
+    position: relative;
+    top: -550px;
+    left: 0px;
+    z-index: 3;
+}
+.btn-Vietnam{
+    position: relative;
+    top: -1000px;
+    left: -125px;
+    z-index: 3;
+}
+.btn-Laos{
+    position: relative;
+    top: -950px;
+    left: -350px;
+    z-index: 3;
+}
+.btn-Cambodia{
+    position: relative;
+    top: -800px;
+    left: -475px;
+    z-index: 3;
+}
+.btn-Thailand{
+    position: relative;
+    top: -875px;
+    left: -725px;
+    z-index: 3;
+}
+.btn-Myanmar{
+    position: relative;
+    top: -1000px;
+    left: -1000px;
+    z-index: 3;
+}
+.btn-Malaysia{
+    position: relative;
+    top: -625px;
+    left: -1025px;
+    z-index: 3;
+}
+.btn-EastTimor{
+    position: relative;
+    top: -325px;
+    left: -700px;
+    z-index: 3;
+}
+.btn-Indonesia{
+    position: relative;
+    top: -425px;
+    left: -1300px;
+    z-index: 3;
+}
+a{
+    text-decoration: none;
+    cursor: default;
+}
+/*組員介紹*/
+#member-list{
+    position: absolute;
+    top: 2500px;
+    margin: auto;
+    left: 10%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+.member{
+    width: 350px;
+    height: 600px;
+    transform: skewX(-15deg);
+    display: block;
+    margin: 0 .5em 1em 0;
+    background: #ffd9bb;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.name{
+    width: 350px;
+    height: 50px;
+    transform: skewX(0deg);
+    background-color: #0C335B;
+    display: block;
+    margin: 0 .5em 1em 0;
+    position: relative;
+    top: 80%;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "running";
+    text-align: end;
+}
+.photo{
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: -16%;
+    width: 150%;
+    transform: skewX(15deg);
+}  
+#wei{
+    width: 170%;
+}
+#le{
+    width: 160%;
+    top: -5%;
+}
+#memli{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+#member-list{
+    position: relative;
+    top: 0;
+    left: -30px;
+    gap: 5px;
+}
+/*頁尾*/
+#foot{
+    background-color: rgb(231, 168, 51);
+    border-top: solid 1px #0C335B;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    width: 100VW;
+}
+/*定義*/
+@font-face{
+    font-family: "running";
+    src: url(../TTF/Running_Script.ttf) format("opentype");
+}
+@font-face{
+    font-family: "cubic";
+    src: url(../TTF/CUBIC_11_1.010_R.TTF) format("opentype");
+}
+@font-face{
+    font-family: "zen";
+    src: url(../TTF/ZenKurenaido-Regular.ttf) format("opentype");
+}
+@font-face{
+    font-family: "Gen";
+    src: url(../TTF/GenSenRounded-R.ttc) format("opentype");
+}
+@keyframes a{
+    0% {
+        left: 0;
+        width: 50%;
+    }
+    50%{
+        left: 0;
+        width: 50%;
+    }
+    100% {
+        left: 0;
+        width: 0;
+    }
+}
+@keyframes b{
+    0% {
+        width: 50%;
+        right: 0;
+    }
+    50%{
+        right: 0;
+        width: 50%;
+    }
+    100% {
+        width: 0;
+        right: 0;
+    
+    }
+}
+@keyframes c{
+    0% {
+        left: 0;
+        width: 50%;
+    }
+    50%{
+        left: 0;
+        width: 50%;
+    }
+    100% {
+        left: 0;
+        width: 0;
+    }
+}
+@keyframes d{
+    0% {
+        width: 50%;
+        right: 0;
+    }
+    50%{
+        right: 0;
+        width: 50%;
+    }
+    100% {
+        width: 0;
+        right: 0;
+    }
+}
+@keyframes e{
+    0% {
+        opacity: 0;
+        color: #E3B562;
+    }
+    90%{
+        opacity: 1;
+        color: #E3B562;
+    }
+    100% {
+        opacity: 1;
+        color: #0C335B;
+    }
+}
+@keyframes f{
+    0% {
+        transform: scale(1.2);
+    }
+    66%{
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+      }
+}
+@keyframes g{
+    0% {
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes h {
+    0%{
+        top: 0px;
+    }
+    100%{
+        top: -300px;
+    }
+}
+@keyframes i {
+    0%{
+        top: 100px;
+        opacity: 0;
+    }
+    100%{
+        top: 0px;
+        opacity: 1;;
+    }
+}
+@keyframes j {
+    0%{
+        top: 100px;
+        opacity: 0;
+    }
+    25%{
+        top: 100px;
+        opacity: 0;
+    }
+    100%{
+        top: 0px;
+        opacity: 1;;
+    }
+}
+/*RWD*/
+@media (max-width: 1200px) {
+    /*首頁動畫*/
+    #logo{
+        scale: 0.8;
+    }
+    #CountryButton:before {
+        width: 50px;
+    }
+    #maptri{
+        display: none;
+    }
+    #bigmap{
+        display: none;
+    }
+    #mapbg{
+        display: none;
+    }
+    #t-smile{
+        display: none;
+    }
+    #diatri{
+        display: none;
+    }
+    #diabox{
+        display: none;
+    }
+    
+}

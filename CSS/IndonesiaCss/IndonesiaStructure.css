@@ -1,0 +1,383 @@
+body{
+    width: 100%;
+    margin: 0;
+    background-color: #f3eccb;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+.space{
+    width: 100%;
+    height: 150px;
+}
+/*頁首*/
+#head{
+    background-color: #0C335B;
+    padding-top: 15px; 
+    padding-bottom: 15px;
+    text-align: center;
+    z-index: 6;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: flex;  
+    overflow: hidden;
+}
+#logo-a{
+    height: 100px;
+    margin-left: 5px;
+}
+#logo-txt-a{
+    text-align: center;
+    color: #E3B562;
+    font-family: "cubic";
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#head-tri{
+    position: relative;
+    right: -1270px;
+    width: 200px;
+    z-index: -1;
+}   
+#head-tri::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -40px;
+    right: 0px;
+    bottom: 0;
+    background: orange;
+    transform: skewX(21deg);
+    z-index: 5;
+    transition-duration: 1s;
+}
+#head-tri::before {
+    content: "回到首頁";
+    position: absolute;
+    top: 0;
+    right: -70px;
+    width: 270px;
+    height: 100px;
+    padding-right: 20px;
+    background: orange;
+    z-index: 7; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    text-align: center;
+    font-family: "zen"; 
+    color: white;
+    font-size: 50px;
+    transition-duration: 1s;
+}
+#head-tri:hover::before{
+    width: 300px;
+    right: -80px;
+    transition-duration: 1s;
+}
+#head-tri:hover::after{
+    left: -100px;
+    transition-duration: 1s;
+}
+/*橫幅*/
+#bar-a{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+#gray-bar{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    z-index: 5;
+}
+#white{
+    position: absolute;
+    top: 275px;
+    left: 800px;
+    margin: auto;
+    color: #0C335B;
+    font-size: 75px;
+    font-family: "running";
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    opacity: 1;
+    z-index: 5;
+}
+#bar-imgL{
+    object-fit: fill;
+    margin: auto;
+    scale: 1.2;
+    opacity: 1;
+    z-index: 4;
+    padding: 0;
+    position: relative;
+    top: -99%;
+    left: -595px;
+}
+#bar-img{
+    object-fit: fill;
+    margin: auto;
+    scale: 0.4  ;
+    opacity: 1;
+    z-index: 4;
+    padding: 0;
+    position: relative;
+    top: -300%;
+    left: -435px;
+}
+#bar-imgR{
+    object-fit: contain;
+    margin: auto;
+    scale: 1.2;
+    opacity: 1;
+    z-index: 4;
+    padding: 0;
+    position: relative;
+    top: -501%;
+    left: 1300px;
+}#bar-imgL{
+    object-fit: fill;
+    margin: auto;
+    scale: 0.4;
+    opacity: 1;
+    z-index: 4;
+    padding: 0;
+    position: relative;
+    top: -951px;
+    left: -1395px;
+}
+#bar-img{
+    object-fit: fill;
+    margin: auto;
+    scale: 0.4;
+    opacity: 1;
+    z-index: 4;
+    padding: 0;
+    position: relative;
+    top: -2455px;
+    left: -435px;
+}
+#bar-imgR{
+    object-fit: contain;
+    margin: auto;
+    scale: 0.4;
+    opacity: 1;
+    z-index: 4;
+    padding: 0;
+    position: relative;
+    top: -3959px;
+    left: 525px;
+}
+#barbg{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+#bar-tri{
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 800px solid #FFD700;
+    border-left: 300px solid transparent;
+    z-index: 5;
+    animation: a 2s ease-out 0s 1;
+    animation-fill-mode: forwards;
+}
+/*段落-現代建築*/
+.para{
+    width: 80%;
+    height: auto;
+}
+.content-txt{
+    position: relative;
+    left: 10%;
+    text-align: left;
+    width: 80%;
+    font-size: 24px;
+    line-height: 1.5;
+    padding-left: 5px;
+    font-family: "zen";
+    font-weight: normal;
+}
+.img{
+    border-radius: 10px;
+    box-shadow: 3px 3px 12px grey;
+    width: 600px;
+    margin: auto;
+    border-radius: 40px;
+}
+.food-intro{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.first{
+    border-left: solid 5px red;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 50px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+.second{
+    border-left: solid 5px purple;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 40px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+.third{
+    border-left: solid 5px seagreen;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+.part{
+    display: flex;
+    justify-content: left;
+    gap: 50px;
+}
+#img-PrambananTempleCompounds{
+    width: 800px;
+}
+/*特殊節日*/
+#haji{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-color: gray;
+    position: relative;
+    left: 0;
+
+}
+span{
+    height: 50px;
+}
+/*導覽列*/
+.nav{
+    width: 300px;
+    height: 200px;
+    position: sticky;
+    bottom: 150px;
+    left: 95%;
+    bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    overflow: hidden;
+    z-index: 5;
+}
+.icon{
+    background-color: #E3B562;
+    border-radius: 50%;
+}
+.btn,
+.btn:focus {
+    position: sticky;
+    left: 95%;
+    bottom: 10%;
+    width: 20px;
+    height: 30px;
+    background-color: #0C335B;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition-duration: 0.4s;
+    padding: 10px 20px;
+    padding-bottom: 10px;
+    z-index: 5;
+    overflow: hidden;
+    display: flex;
+}
+.btn:hover {
+    background-color: #E3B562;
+    color: #0C335B;
+    width: 200px;
+    transition-duration: 0.1s;
+    cursor: pointer;
+}
+.btn:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    box-shadow: 0 0 10px 40px white;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.btn:active:after {
+    opacity: 1;
+    transition: 0s;
+    box-shadow: 0 0 0 0 white;
+}
+.btn:active {
+    top: 1px;
+}
+/*頁尾*/
+#foot{
+    background-color: rgb(231, 168, 51);
+    border-top: solid 1px #0C335B;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+/*定義*/
+@font-face{
+    font-family: "running";
+    src: url(../../TTF/Running_Script.ttf) format("opentype");
+}
+@font-face{
+    font-family: "zen";
+    src: url(../../TTF/ZenKurenaido-Regular.ttf) format("opentype");
+}
+@font-face{
+    font-family: "cubic";
+    src: url(../../TTF/CUBIC_11_1.010_R.TTF) format("opentype");
+}
+@keyframes jump{
+    0%{top: 0px;}
+    50%{top: -25px;}
+    100%{top: 0px;}
+}
+@keyframes a{
+    0% {
+        right: 0;
+        width: 100%;
+    }
+    50%{
+        right: 0;
+        width: 100%;
+    }
+    100% {
+        right: 0;
+        width: 0;
+    }
+}

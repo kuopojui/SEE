@@ -1,0 +1,415 @@
+body{
+    width: 100%;
+    margin: 0;
+    background-color: #f3eccb;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+.space{
+    width: 100%;
+    height: 150px;
+}
+/*頁首*/ 
+#head{
+    background-color: #0C335B;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    z-index: 6;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: flex;  
+    overflow: hidden;
+}
+#logo-a{
+    height: 100px;
+    margin-left: 5px;
+}
+#logo-txt-a{
+    text-align: center;
+    color: #E3B562;
+    font-family: "cubic";
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#head-tri{
+    position: relative;
+    right: -1270px;
+    width: 200px;
+    z-index: -1;
+}   
+#head-tri::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -40px;
+    right: 0px;
+    bottom: 0;
+    background: orange;
+    transform: skewX(21deg);
+    z-index: 5;
+    transition-duration: 1s;
+}
+#head-tri::before {
+    content: "回到首頁";
+    position: absolute;
+    top: 0;
+    right: -70px;
+    width: 270px;
+    height: 100px;
+    padding-right: 20px;
+    background: orange;
+    z-index: 7; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    text-align: center;
+    font-family: "zen"; 
+    color: white;
+    font-size: 50px;
+    transition-duration: 1s;
+}
+#head-tri:hover::before{
+    width: 300px;
+    right: -80px;
+    transition-duration: 1s;
+}
+#head-tri:hover::after{
+    left: -100px;
+    transition-duration: 1s;
+}
+/*橫幅*/
+#bar-a{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+#gray-bar{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    z-index: 5;
+}
+#white{
+    position: absolute;
+    top: 275px;
+    left: 800px;
+    margin: auto;
+    color: #0C335B;
+    font-size: 75px;
+    font-family: "running";
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    opacity: 1;
+    z-index: 5;
+}
+#bar-imgL{
+    object-fit: fill;
+    margin: auto;
+    scale: 0.4;
+    opacity: 1;
+    z-index: 4;
+    padding: 0;
+    position: relative;
+    top: -1034px;
+    left: -1300px;
+}
+#bar-img{
+    object-fit: fill;
+    margin: auto;
+    scale: 0.4; 
+    opacity: 1;
+    z-index: 4;
+    padding: 0; 
+    position: relative;
+    top: -2526px;
+    left: -400px;
+}
+#bar-imgR{
+    object-fit: fill;
+    margin: auto;
+    scale: 0.4;
+    opacity: 1;
+    z-index: 4;
+    padding: 0;
+    position: relative;
+    top: -4030px;
+    left: 550px;
+}
+#barbg{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+#bar-tri{
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 800px solid #FFD700;
+    border-left: 300px solid transparent;
+    z-index: 5;
+    animation: a 2s ease-out 0s 1;
+    animation-fill-mode: forwards;
+}
+/*介紹*/
+#introuduce-a{
+    width: auto;
+    height: auto;
+}
+#flex-a{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+#txt{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: min-content;
+    z-index: 2;
+}
+.txt{
+    font-family: "zen";
+    color: black;
+}
+.content-txt{
+    position: relative;
+    left: 10%;
+    text-align: left;
+    width: 80%;
+    font-size: 24px;
+    line-height: 2;
+    padding-left: 5px;
+    font-weight: 800;
+}
+.first{
+    border-left: solid 5px red;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 50px;
+    font-weight: bolder
+}
+#bg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    z-index: 3;
+    width: 40%;
+    gap: 10px;
+}
+#emblem{
+    scale: 1.5;
+    position: absolute;
+    top: 1550px;
+    left: 1435px;
+}
+#flag{
+    scale: 0.5;
+    padding-bottom: 80px;
+    
+}
+#instruction{
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "zen";
+    position: relative;
+    top: -150px;
+}
+#instruction-E{
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "zen";
+    position: absolute;
+    top: 1870px;
+    left: 1475px;
+}
+audio{
+    position: relative;
+    top: -74px;
+    left: 40%;
+    color: #0C335B;
+    width: 300px;
+} 
+audio::-webkit-media-controls-panel{
+    background-color: #f3eccb;
+    color: #0C335B;
+}
+  
+/*分類介紹*/
+#introuduce-b{
+    width: auto;
+    height: auto;
+}
+#flex-b{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.second{
+    border-left: solid 5px red;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 50px;
+    position: relative;
+    left: 120px;
+}
+.opt-txt{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.opts-txt{
+    font-family: "zen";
+    font-weight: bold;
+    font-size: 24px;
+    padding-top: 25px;
+}
+.option{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    position: relative;
+    margin: auto;
+}
+.options{
+    width: 150px;
+    height: 150px;
+    position: relative;
+}
+.options:hover{
+    animation: jump 1.5s linear 0s infinite;
+} 
+/*遊戲*/
+#game-bg{
+    width: 100%;
+    height: 500px;
+    background-color: #0C335B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+#gametxt{
+    color: white;
+    font-family: "zen";
+    font-size: 100px;
+    font-weight: bold;
+    padding-top: 25px;
+}
+#gametxt-2{
+    color: white;
+    font-family: "zen";
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+#button-bg{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.btn,.btn:focus {
+    position: relative;
+    z-index: 1;
+    min-width: 200px;
+    border: 2px solid #E3B562;
+    border-radius: 0;
+    color: #E3B562;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+    transition: all 1s ease;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-family: "zen";
+}
+.btn:after {
+    content: "";
+    position: absolute;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    width: 150%;
+    z-index: -1;
+    background: #E3B562;
+    transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+    transition: all 0.75s ease 0s;
+}
+.btn:hover {
+    color: #0C335B;
+    text-shadow: none;
+}
+.btn:hover:after {
+    height: 450%;
+}
+/*頁尾*/
+#foot{
+    background-color: rgb(231, 168, 51);
+    border-top: solid 1px #0C335B;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+/*定義*/
+@font-face{
+    font-family: "running";
+    src: url(../../TTF/Running_Script.ttf) format("opentype");
+}
+@font-face{
+    font-family: "zen";
+    src: url(../../TTF/ZenKurenaido-Regular.ttf) format("opentype");
+}
+@font-face{
+    font-family: "cubic";
+    src: url(../../TTF/CUBIC_11_1.010_R.TTF) format("opentype");
+}
+@keyframes jump{
+    0%{
+        top: 0px;
+    }
+    50%{
+        top: -25px;
+    }
+    100%{
+        top: 0px;
+    }
+}
+@keyframes a{
+    0% {
+        right: 0;
+        width: 100%;
+    }
+    50%{
+        right: 0;
+        width: 100%;
+    }
+    100% {
+        right: 0;
+        width: 0;
+    }
+}
