@@ -99,11 +99,12 @@ body::-webkit-scrollbar{
 #white{
     position: absolute;
     top: 275px;
-    left: 850px;
-    margin: auto; 
+    left: 800px;
+    margin: auto;
     color: #0C335B;
     font-size: 75px;
     font-family: "running";
+    font-weight: bold;
     display: flex;
     justify-content: center;
     text-align: center;

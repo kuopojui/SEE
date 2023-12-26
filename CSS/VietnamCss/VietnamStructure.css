@@ -104,7 +104,7 @@ body::-webkit-scrollbar{
     color: #0C335B;
     font-size: 75px;
     font-family: "running";
-    font-weight: 800;
+    font-weight: bold;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -204,6 +204,8 @@ body::-webkit-scrollbar{
     border-left: solid 5px red;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+    width: fit-content;
+    color: black;
     font-size: 50px;
     font-weight: bold;
     padding-left: 10px;
