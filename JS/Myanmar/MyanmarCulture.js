@@ -6,13 +6,13 @@ document.querySelector('#btn1').addEventListener('click',function(){
 })
 document.querySelector('#btn2').addEventListener('click',function(){
     window.scrollTo({
-      top: 3950,
+      top: 3800,
       behavior: 'smooth'
     });
 })
 document.querySelector('#btn3').addEventListener('click',function(){
     window.scrollTo({
-      top: 6150,
+      top: 6050,
       behavior: 'smooth'
     });
 })

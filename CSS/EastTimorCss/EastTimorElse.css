@@ -57,7 +57,7 @@ body::-webkit-scrollbar{
     transition-duration: 1s;
 }
 #head-tri::before {
-    content: "回到首頁";
+    content: "國家簡介";
     position: absolute;
     top: 0;
     right: -70px;
@@ -167,6 +167,9 @@ body::-webkit-scrollbar{
 }
 .FFimg{
     height: 30px;
+    padding-left: 5px;
+    padding-right: 10px;
+
 }
 .content-txt{
     position: relative;
@@ -174,16 +177,17 @@ body::-webkit-scrollbar{
     text-align: left;
     width: 80%;
     font-size: 24px;
-    line-height: 1.25;
+    line-height: 1.5;
     padding-left: 5px;
-    font-family: "running";
-    font-weight: bold;
+    font-family: "zen";
+    font-weight: normal;
 }
 .img{
-    border: solid 5px #E3B562 ;
     border-radius: 10px;
     box-shadow: 3px 3px 12px grey;
     width: 600px;
+    margin: auto;
+    border-radius: 40px;
 }
 .food-intro{
     display: flex;
@@ -195,18 +199,24 @@ body::-webkit-scrollbar{
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     font-size: 50px;
+    font-weight: bold;
+    padding-left: 10px;
 }
 .second{
     border-left: solid 5px purple;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     font-size: 40px;
+    font-weight: bold;
+    padding-left: 10px;
 }
 .third{
     border-left: solid 5px seagreen;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     font-size: 30px;
+    font-weight: bold;
+    padding-left: 10px;
 }
 .part{
     display: flex;
@@ -243,13 +253,17 @@ span{
     overflow: hidden;
     z-index: 5;
 }
+.icon{
+    background-color: #E3B562;
+    border-radius: 50%;
+}
 .btn,
 .btn:focus {
     position: sticky;
     left: 95%;
     bottom: 10%;
-    width: 10px;
-    height: 21px;
+    width: 20px;
+    height: 30px;
     background-color: #0C335B;
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
@@ -263,6 +277,7 @@ span{
     padding-bottom: 10px;
     z-index: 5;
     overflow: hidden;
+    display: flex;
 }
 .btn:hover {
     background-color: #E3B562;
@@ -308,7 +323,15 @@ span{
 /*定義*/
 @font-face{
     font-family: "running";
-    src: url(../../TTF/Running_Script.ttf) format("opentype");
+    src: url(../../TTF/HanyiSentyTang.ttf) format("opentype");
+}
+@font-face{
+    font-family: "zen";
+    src: url(../../TTF/ZenKurenaido-Regular.ttf) format("opentype");
+}
+@font-face{
+    font-family: "cubic";
+    src: url(../../TTF/CUBIC_11_1.010_R.TTF) format("opentype");
 }
 @keyframes jump{
     0%{top: 0px;}

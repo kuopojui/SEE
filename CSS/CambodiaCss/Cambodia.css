@@ -113,13 +113,13 @@ body::-webkit-scrollbar{
 #bar-imgL{
     object-fit: fill;
     margin: auto;
-    scale: 1;
+    scale: 0.4;
     opacity: 1;
     z-index: 4;
     padding: 0;
     position: relative;
-    top: -100%;
-    left: -525px;
+    top: -1000px;
+    left: -1100px;
 }
 #bar-img{
     object-fit: fill;
@@ -129,19 +129,19 @@ body::-webkit-scrollbar{
     z-index: 4;
     padding: 0; 
     position: relative;
-    top: -1500px;
-    left: -450px;
+    top: -2500px;
+    left: -155px;
 }
 #bar-imgR{
     object-fit: fill;
     margin: auto;
-    scale: 1;
+    scale: 0.4;
     opacity: 1;
     z-index: 4;
     padding: 0;
     position: relative;
-    top: -2500px;
-    left: 1200px;
+    top: -4005px;
+    left: 800px;
 }
 #barbg{
     width: 100%;
@@ -367,7 +367,7 @@ audio::-webkit-media-controls-panel{
 /*定義*/
 @font-face{
     font-family: "running";
-    src: url(../../TTF/Running_Script.ttf) format("opentype");
+    src: url(../../TTF/HanyiSentyTang.ttf) format("opentype");
 }
 @font-face{
     font-family: "zen";

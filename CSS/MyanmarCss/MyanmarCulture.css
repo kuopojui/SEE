@@ -57,7 +57,7 @@ body::-webkit-scrollbar{
     transition-duration: 1s;
 }
 #head-tri::before {
-    content: "回到首頁";
+    content: "國家簡介";
     position: absolute;
     top: 0;
     right: -70px;
@@ -99,7 +99,7 @@ body::-webkit-scrollbar{
 #white{
     position: absolute;
     top: 275px;
-    left: 800px;
+    left: 850px;
     margin: auto; 
     color: #0C335B;
     font-size: 75px;
@@ -164,32 +164,6 @@ body::-webkit-scrollbar{
 .para{
     width: 80%;
     height: auto;
-}
-.food-ball{
-    width: 100px;
-    position: absolute;
-    top: -25px;
-    left: 250px;
-    z-index: -1;
-    animation: b 10s linear 0s infinite;
-    animation-fill-mode: forwards;
-}
-.fireT{
-    scale: 0.1;
-    position: absolute;
-    top: -550px;
-    left: -850px;
-    z-index: 2;
-}
-.fire{
-    width: 50px;
-    height: 50px;
-    position: absolute; 
-    top: 595px;
-    left: 65px;
-    z-index: 2;
-    animation:  3s ease-out 0s infinite;
-    animation-fill-mode: forwards;
 }
 .content-txt{
     position: relative;
@@ -258,113 +232,41 @@ body::-webkit-scrollbar{
 span{
     height: 50px;
 }
-.flash{
-    width: 30px;
-}
-#F1{
+#diabox{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: "zen";
+    font-weight: bold;
+    color: #0C335B;
+    width: 600px;
+    height: 100px;
+    background-color: orange;
+    border: solid 2px orange;
+    border-radius: 50px;
     position: absolute;
-    top: 1115px;
-    left: 110px;
+    top: 800px;
+    left: 1100px;
+    z-index: 4;
 }
-#F2{
+#diatri{
+    width: 0;
+    height: 0;
+    border-top: 50px solid orange;
+    border-right: 30px solid transparent;
+    border-left: 100px solid transparent;
     position: absolute;
-    top: 1115px;
-    left: 140px;
+    top: 850px;
+    left: 1450px;
+    z-index: 3;
+    transform: rotate(-150deg);
 }
-#F3{
+.TT{
     position: absolute;
-    top: 1115px;
-    left: 170px;
-}
-#F4{
-    position: absolute;
-    top: 1115px;
-    left: 200px;
-}
-#F5{
-    position: absolute;
-    top: 1115px;
-    left: 230px;
-}
-#F6{
-    position: absolute;
-    top: 1115px;
-    left: 260px;
-}
-#F7{
-    position: absolute;
-    top: 1115px;
-    left: 290px;
-}
-#F8{
-    position: absolute;
-    top: 1115px;
-    left: 320px;
-}
-#F9{
-    position: absolute;
-    top: 1115px;
-    left: 350px;
-}
-#F10{
-    position: absolute;
-    top: 1115px;
-    left: 380px;
-}
-#F1:hover{
-    position: absolute;
-    top: 1115px;
-    left: 110px;
-}
-#F2:hover{
-    position: absolute;
-    height: 50px;
-    top: 1095px;
-    left: 140px;
-}
-#F3:hover{
-    position: absolute;
-    top: 1115px;
-    left: 170px;
-}
-#F4:hover{
-    position: absolute;
-    top: 1115px;
-    left: 200px;
-}
-#F5:hover{
-    position: absolute;
-    top: 1115px;
-    left: 230px;
-    display: none;
-}
-#F6:hover{
-    position: absolute;
-    height: 50px;
-    top: 1095px;
-    left: 260px;
-}
-#F7:hover{
-    position: absolute;
-    top: 1115px;
-    left: 290px;
-}
-#F8:hover{
-    position: absolute;
-    top: 1115px;
-    left: 320px;
-    display: none;
-}
-#F9:hover{
-    position: absolute;
-    height: 50px;
-    top: 1095px;
-    left: 350px;
-}
-#F10:hover{
-    position: absolute;
-    top: 1115px;
-    left: 380px;
+    top: 975px;
+    right: -187px;
 }
 /*導覽列*/
 .nav{
@@ -451,7 +353,7 @@ span{
 /*定義*/
 @font-face{
     font-family: "running";
-    src: url(../../TTF/Running_Script.ttf) format("opentype");
+    src: url(../../TTF/HanyiSentyTang.ttf) format("opentype");
 }
 @font-face{
     font-family: "zen";

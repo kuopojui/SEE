@@ -57,7 +57,7 @@ body::-webkit-scrollbar{
     transition-duration: 1s;
 }
 #head-tri::before {
-    content: "回到首頁";
+    content: "國家簡介";
     position: absolute;
     top: 0;
     right: -70px;
@@ -118,7 +118,7 @@ body::-webkit-scrollbar{
     z-index: 4;
     padding: 0;
     position: relative;
-    top: -1050px;
+    top: -1000px;
     left: -1100px;
 }
 #bar-img{
@@ -140,8 +140,8 @@ body::-webkit-scrollbar{
     z-index: 4;
     padding: 0;
     position: relative;
-    top: -4040px;
-    left: 805px;
+    top: -4005px;
+    left: 800px;
 }
 #barbg{
     width: 100%;
@@ -324,7 +324,7 @@ span{
 /*定義*/
 @font-face{
     font-family: "running";
-    src: url(../../TTF/Running_Script.ttf) format("opentype");
+    src: url(../../TTF/HanyiSentyTang.ttf) format("opentype");
 }
 @font-face{
     font-family: "zen";

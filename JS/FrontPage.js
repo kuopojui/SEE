@@ -1,6 +1,6 @@
 document.querySelector('#ToMembers').addEventListener('click',function(){
     window.scrollTo({
-      top: 3250,
+      top: 3450,
       behavior: 'smooth'
     });
 })
@@ -12,7 +12,7 @@ document.querySelector('#ToTop').addEventListener('click',function(){
 })
 document.querySelector('#ToMap').addEventListener('click',function(){
     window.scrollTo({
-      top: 1750,
+      top: 2200,
       behavior: 'smooth'
     });
 })

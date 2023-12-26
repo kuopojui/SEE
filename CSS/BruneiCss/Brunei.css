@@ -367,7 +367,7 @@ audio::-webkit-media-controls-panel{
 /*定義*/
 @font-face{
     font-family: "running";
-    src: url(../../TTF/Running_Script.ttf) format("opentype");
+    src: url(../../TTF/HanyiSentyTang.ttf) format("opentype");
 }
 @font-face{
     font-family: "zen";

@@ -334,14 +334,14 @@ body::-webkit-scrollbar{
     width: 15%;
     height: auto;
     position: absolute;
-    top: 2210px;
+    top: 2400px;
     left: 1600px;
     z-index: 5;
 }
 #plane{
     scale: 1.5;
     position: absolute;
-    top: 2500px;
+    top: 2600px;
     left: 1100px;
     z-index: 3;
 

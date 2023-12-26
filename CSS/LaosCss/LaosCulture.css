@@ -57,7 +57,7 @@ body::-webkit-scrollbar{
     transition-duration: 1s;
 }
 #head-tri::before {
-    content: "回到首頁";
+    content: "國家簡介";
     position: absolute;
     top: 0;
     right: -70px;
@@ -244,128 +244,7 @@ body::-webkit-scrollbar{
     gap: 50px;
 }
 /*特殊節日*/
-#haji{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    background-color: gray;
-    position: relative;
-    left: 0;
 
-}
-span{
-    height: 50px;
-}
-.flash{
-    width: 30px;
-}
-#F1{
-    position: absolute;
-    top: 1115px;
-    left: 110px;
-}
-#F2{
-    position: absolute;
-    top: 1115px;
-    left: 140px;
-}
-#F3{
-    position: absolute;
-    top: 1115px;
-    left: 170px;
-}
-#F4{
-    position: absolute;
-    top: 1115px;
-    left: 200px;
-}
-#F5{
-    position: absolute;
-    top: 1115px;
-    left: 230px;
-}
-#F6{
-    position: absolute;
-    top: 1115px;
-    left: 260px;
-}
-#F7{
-    position: absolute;
-    top: 1115px;
-    left: 290px;
-}
-#F8{
-    position: absolute;
-    top: 1115px;
-    left: 320px;
-}
-#F9{
-    position: absolute;
-    top: 1115px;
-    left: 350px;
-}
-#F10{
-    position: absolute;
-    top: 1115px;
-    left: 380px;
-}
-#F1:hover{
-    position: absolute;
-    top: 1115px;
-    left: 110px;
-}
-#F2:hover{
-    position: absolute;
-    height: 50px;
-    top: 1095px;
-    left: 140px;
-}
-#F3:hover{
-    position: absolute;
-    top: 1115px;
-    left: 170px;
-}
-#F4:hover{
-    position: absolute;
-    top: 1115px;
-    left: 200px;
-}
-#F5:hover{
-    position: absolute;
-    top: 1115px;
-    left: 230px;
-    display: none;
-}
-#F6:hover{
-    position: absolute;
-    height: 50px;
-    top: 1095px;
-    left: 260px;
-}
-#F7:hover{
-    position: absolute;
-    top: 1115px;
-    left: 290px;
-}
-#F8:hover{
-    position: absolute;
-    top: 1115px;
-    left: 320px;
-    display: none;
-}
-#F9:hover{
-    position: absolute;
-    height: 50px;
-    top: 1095px;
-    left: 350px;
-}
-#F10:hover{
-    position: absolute;
-    top: 1115px;
-    left: 380px;
-}
 /*導覽列*/
 .nav{
     width: 300px;
@@ -451,7 +330,7 @@ span{
 /*定義*/
 @font-face{
     font-family: "running";
-    src: url(../../TTF/Running_Script.ttf) format("opentype");
+    src: url(../../TTF/HanyiSentyTang.ttf) format("opentype");
 }
 @font-face{
     font-family: "zen";
