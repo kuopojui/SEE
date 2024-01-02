@@ -10,6 +10,10 @@ body::-webkit-scrollbar{
     width: 100%;
     height: 150px;
 }
+a{
+    text-decoration: none;
+    display: flex;
+}
 /*頁首*/ 
 #head{
     background-color: #0C335B;
@@ -94,7 +98,6 @@ body::-webkit-scrollbar{
     position: relative;
     width: 100%;
     height: 500px;
-    background-color: gray;
     opacity: 0.3;
     z-index: 5;
 }

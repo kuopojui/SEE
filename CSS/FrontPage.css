@@ -1,5 +1,5 @@
 body{
-    width: 100%;
+    width: 100vw;
     margin: 0;
     background-color: #f3eccb;
 }
@@ -8,7 +8,7 @@ body::-webkit-scrollbar{
 }
 /*開頭動畫*/
 #square{
-    width: 100%;    
+    width: 100vw;    
     height: 850px;
     background-color: #ffd9bb;
     z-index: 0;
@@ -122,7 +122,7 @@ body::-webkit-scrollbar{
     z-index: 6;
     position: sticky;
     top: 0;
-    width: 100VW;
+    width: 100vw;
     height: auto;
     margin: auto;
 }
@@ -673,33 +673,4 @@ a{
         top: 0px;
         opacity: 1;;
     }
-}
-/*RWD*/
-@media (max-width: 1200px) {
-    /*首頁動畫*/
-    #logo{
-        scale: 0.8;
-    }
-    #CountryButton:before {
-        width: 50px;
-    }
-    #maptri{
-        display: none;
-    }
-    #bigmap{
-        display: none;
-    }
-    #mapbg{
-        display: none;
-    }
-    #t-smile{
-        display: none;
-    }
-    #diatri{
-        display: none;
-    }
-    #diabox{
-        display: none;
-    }
-    
 }
